@@ -1,0 +1,3 @@
+--Habilitar privilegios
+
+GRANT CREATE SESSION TO PRODUCTOSDB;

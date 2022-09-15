@@ -1,0 +1,14 @@
+DECLARE
+
+v_country_id varchar(2);
+
+BEGIN
+
+SELECT COUNTRY_ID
+  INTO v_country_id
+ FROM COUNTRIES
+WHERE COUNTRY_NAME = 'Korea';
+
+DELETE FROM COUNTRIES  WHERE COUNTRY_ID = v_country_id;
+
+END;
